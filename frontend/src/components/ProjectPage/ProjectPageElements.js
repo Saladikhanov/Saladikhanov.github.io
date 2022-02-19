@@ -11,8 +11,13 @@ export const HeroContainer = styled.div`
   padding: 0 30px;
   height: 800px;
   position: relative;
-  z-index: 1;
+  flex-direction: row;
+  /* z-index: 0; */
   /* add: before styles; */
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -27,9 +32,9 @@ export const HeroBg = styled.div`
 `;
 
 export const HeroContent = styled.div`
-  z-index: 3;
+  /* z-index: 3; */
   max-width: 1200px;
-  position: absolute;
+  /* position: absolute; */
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -66,11 +71,9 @@ export const HeroP = styled.p`
   text-align: center;
   max-width: 600px;
   margin-bottom: 35px;
-  padding: 5px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
-    width: 80%;
   }
 
   @media screen and (max-width: 480px) {

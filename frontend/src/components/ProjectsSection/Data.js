@@ -1,5 +1,5 @@
 export const projectObjOne = {
-  img: require("../../assets/def_pic.png"),
+  img: require("../../assets/project-1.png"),
   alt: "project preview",
   projectName: "WHV Canada",
   projectDescription: "Product Design for visa consulting company.",

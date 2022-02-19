@@ -75,6 +75,7 @@ export const Img = styled.img`
 
   @media screen and (max-width: 768px) {
     padding-right: 0;
+    width: 100vw;
   } ;
 `;
 export const Link = styled.a``;
@@ -85,12 +86,14 @@ export const LogoWrap = styled.div`
   /* justify-content: space-evenly; */
 `;
 export const Logo1 = styled.img`
+  /* border: 1px solid red; */
   padding: 20px;
-  weight: 100px;
-  height: 100px;
+  width: 100px;
+  /* height: 100px; */
 `;
 export const Logo2 = styled.img`
+  /* border: 1px solid red; */
   padding: 20px;
-  weight: 100px;
-  height: 100px;
+  width: 100px;
+  /* height: 100px; */
 `;

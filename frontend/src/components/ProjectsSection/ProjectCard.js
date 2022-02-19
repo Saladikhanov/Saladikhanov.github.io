@@ -30,7 +30,7 @@ const ProjectCard = (props) => {
       </ProjectDescription>
       <ProjectFooter className="gallery_footer">{projectFooter}</ProjectFooter>
       <ProjectBtnWrapper>
-        <Button to="projects" onMouseEnter={onHover} onMouseLeave={onHover}>
+        <Button to="/project" onMouseEnter={onHover} onMouseLeave={onHover}>
           VIEW DETAILS
           {hover ? <ArrowRight /> : <ArrowRightCircle />}
         </Button>
