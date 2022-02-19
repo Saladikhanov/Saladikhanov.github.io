@@ -56,8 +56,9 @@ body {
 }
 .wrapper {
   min-height: 100%;
-  /* overflow: hidden;
-  overflow-x: hidden; */
+  overflow: hidden;
+  overflow-x: hidden;
+  /* border: 1px solid red; */
 }
 mark {
   background: none;
@@ -258,7 +259,7 @@ ul.expertise_desc > li {
 
 .orange-radial {
   /* z-index: -1000; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   left: 20px;
   top: 32px;
@@ -275,7 +276,7 @@ ul.expertise_desc > li {
   z-index: -1;
 }
 .purple-radial {
-  border: 1px solid rgb(0, 255, 34);
+  /* border: 1px solid rgb(0, 255, 34); */
   /* z-index: -1000; */
   position: absolute;
   left: -14px;

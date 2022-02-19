@@ -1,6 +1,6 @@
 import React from "react";
-
-import { useState, useEffect } from "react";
+import { BsArrowUp as ArrowUp } from "react-icons/bs";
+// import { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import LogoIcon from "../../assets/logo-icon.png";
 import LogoName from "../../assets/logo-name.png";
@@ -13,6 +13,10 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  ArrowWrap,
+  Copyright,
+  Top,
+  Bottom,
 } from "./FooterElements";
 
 const Footer = ({ toggle }) => {
@@ -24,11 +28,11 @@ const Footer = ({ toggle }) => {
   return (
     <>
       <Nav>
+        <NavLogo to="/" onClick={toggleHome}>
+          <NavIcon src={LogoIcon} />
+          <NavName src={LogoName} />
+        </NavLogo>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
-            <NavIcon src={LogoIcon} />
-            <NavName src={LogoName} />
-          </NavLogo>
           <NavMenu>
             <NavItem>
               <NavLinks
@@ -79,11 +83,14 @@ const Footer = ({ toggle }) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <div>
-            <div>All rights reserved to Daria Zefira</div>
-            <div>© COPYRIGHT 2022</div>
-          </div>
+          <Copyright>
+            <Top>All rights reserved to Daria Zefira</Top>
+            <Bottom>© COPYRIGHT 2022</Bottom>
+          </Copyright>
         </NavbarContainer>
+        <ArrowWrap to="/" onClick={toggleHome}>
+          <ArrowUp />
+        </ArrowWrap>
       </Nav>
     </>
   );

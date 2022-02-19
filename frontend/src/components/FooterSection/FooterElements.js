@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+// import { ImArrowUp2 } from "react-icons/im";
+// import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   /* background: #41327b; */
@@ -18,7 +20,9 @@ export const Nav = styled.nav`
   /* position: sticky; */
 
   @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
+    /* transition: 0.8s all ease; */
+    display: flex;
+    flex-direction: column;
   } ;
 `;
 
@@ -27,11 +31,12 @@ export const NavbarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
+  /* height: 80px; */
+  /* z-index: 1; */
+  width: 80vw;
   padding: 0;
-  max-width: 1100px;
+  /* max-width: 1100px; */
+  /* border: 1px solid red; */
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -74,28 +79,58 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  text-align: center;
-  margin-right: -20px;
+  justify-content: center;
+  padding-left: 0;
+  /* text-align: center; */
+  /* margin-right: -20px; */
+  /* border: 1px solid red; */
+  /* display: none; */
 
   @media screen and (max-width: 768px) {
-    /* width: 100vw; */
+    width: 100vw;
   }
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  /* height: 80px; */
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #beaaea;
+  /* display: none; */
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  /* border: 1px solid red; */
+`;
+export const ArrowWrap = styled.div`
+  margin: 5px;
+  font-size: 25px;
+  color: #e59aff;
+  /* weight: 30px;
+  height: 30px; */
+  /* border: 1px solid red; */
+`;
+export const Copyright = styled.div`
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
 
-  /* &.active {
-    border-bottom: 2px solid #e59aff;
-  } */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+export const Top = styled.div`
+  /* border: 1px solid red; */
+  color: #beaaea;
+  opacity: 30%;
+`;
+export const Bottom = styled.div`
+  /* border: 1px solid red; */
+  color: #beaaea;
+  opacity: 30%;
 `;

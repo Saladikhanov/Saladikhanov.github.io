@@ -10,13 +10,14 @@ export const Nav = styled.nav`
   /* filter: blur(6rem); */
   height: 80px;
   width: 100vw;
-  margin-top: -80px;
+  /* margin-top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  /* position: -webkit-sticky; Safari */
+  /* position: sticky; */
+  position: fixed;
   top: 0;
   transition: 0.8s all ease;
   z-index: 999;

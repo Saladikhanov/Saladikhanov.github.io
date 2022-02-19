@@ -6,13 +6,14 @@ import { Link as LinkScroll } from "react-scroll";
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 990;
-  width: 100%;
+  width: 100vw;
   height: 350px;
   background: rgba(0, 0, 0, 0.534) 100%;
   display: grid;
   align-items: center;
   /* top: 0; */
   left: 0;
+
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "80px" : "-100%")};

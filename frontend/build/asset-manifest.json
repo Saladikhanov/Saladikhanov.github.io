@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec3a060d.css",
-    "main.js": "/static/js/main.686db2e6.js",
+    "main.css": "/static/css/main.a4936c8a.css",
+    "main.js": "/static/js/main.ac0a0b8d.js",
     "static/media/def_pic.png": "/static/media/def_pic.4b1ad8233159f1f86c52.png",
     "static/media/floxies_blanc.png": "/static/media/floxies_blanc.39709a16ff8e1ddcd7d9.png",
     "static/media/baliga_logo.png": "/static/media/baliga_logo.8fef4e9131dd3f76a202.png",
@@ -12,11 +12,11 @@
     "static/media/newyork-webfont.woff2": "/static/media/newyork-webfont.3315a6b67997285668d1.woff2",
     "static/media/floxies_logo.png": "/static/media/floxies_logo.f0c3dd0ce19931ef807d.png",
     "index.html": "/index.html",
-    "main.ec3a060d.css.map": "/static/css/main.ec3a060d.css.map",
-    "main.686db2e6.js.map": "/static/js/main.686db2e6.js.map"
+    "main.a4936c8a.css.map": "/static/css/main.a4936c8a.css.map",
+    "main.ac0a0b8d.js.map": "/static/js/main.ac0a0b8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec3a060d.css",
-    "static/js/main.686db2e6.js"
+    "static/css/main.a4936c8a.css",
+    "static/js/main.ac0a0b8d.js"
   ]
 }
