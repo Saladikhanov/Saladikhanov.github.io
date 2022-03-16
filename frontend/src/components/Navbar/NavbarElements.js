@@ -24,6 +24,7 @@ export const Nav = styled.nav`
   /* border: ${({ scrollNav }) => (scrollNav ? "1px solid red" : "none")}; */
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0px 16px 31px rgba(0, 0, 0, 0.29)" : "none"};
+  backdrop-filter: ${({ scrollNav }) => (scrollNav ? "blur(3px)" : "none")};
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

@@ -4,11 +4,20 @@ import { VscChromeClose } from "react-icons/vsc";
 import { Link as LinkScroll } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
+  /* border: 1px solid red; */
   position: fixed;
   z-index: 990;
   width: 100vw;
   height: 350px;
-  background: rgba(0, 0, 0, 0.534) 100%;
+  /* background: rgba(0, 0, 0, 0.534) 100%; */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 9%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(3px);
   display: grid;
   align-items: center;
   /* top: 0; */
@@ -16,7 +25,10 @@ export const SidebarContainer = styled.aside`
 
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "80px" : "-100%")};
+  top: 80px;
+  /* opacity: 100%; */
+  /* top: ${({ isOpen }) => (isOpen ? "80px" : "-100%")}; */
+  left: ${({ isOpen }) => (isOpen ? "0px" : "100%")};
 `;
 
 export const CloseIcon = styled(VscChromeClose)`
@@ -49,9 +61,11 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarLink = styled(LinkScroll)`
+  /* border: 1px solid red; */
+  padding-right: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
