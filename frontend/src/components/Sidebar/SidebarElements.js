@@ -10,13 +10,23 @@ export const SidebarContainer = styled.aside`
   width: 100vw;
   height: 350px;
   /* background: rgba(0, 0, 0, 0.534) 100%; */
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 9%,
+    rgba(0, 0, 0, 0) 9%,
     rgba(0, 0, 0, 1) 100%
   );
-  -webkit-backdrop-filter: blur(8px);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 9%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 9%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
   backdrop-filter: blur(3px);
   display: grid;
   align-items: center;
@@ -50,13 +60,14 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const SidebarMenu = styled.ul`
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(4, 60px);
   }
 `;
 
@@ -64,7 +75,9 @@ export const SidebarLink = styled(LinkScroll)`
   /* border: 1px solid red; */
   padding-right: 2rem;
   display: flex;
+  /* display: -webkit-flex; */
   align-items: center;
+  /* -webkit-align-items: start; */
   justify-content: flex-end;
   font-size: 1.5rem;
   text-decoration: none;

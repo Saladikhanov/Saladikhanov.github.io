@@ -16,6 +16,11 @@ export const ProjectBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    align-items: start;
+    padding-left: 4%;
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -57,12 +62,24 @@ export const ProjectPic = styled.img`
 export const ProjectName = styled.h2`
   margin: 25px 0;
   text-align: start;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 5%;
+  }
 `;
 export const ProjectDescription = styled.p`
   text-align: start;
   margin-left: 0;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 5%;
+  }
 `;
 export const ProjectFooter = styled.div`
   text-align: start;
   margin-left: 0;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 5%;
+  }
 `;

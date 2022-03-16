@@ -64,7 +64,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 24px;
   width: 350px;
   color: #fff;
