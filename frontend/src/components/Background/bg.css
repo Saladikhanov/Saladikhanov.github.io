@@ -102,8 +102,8 @@ li {
   height: 435px;
   background: radial-gradient(
     90.08% 76.09% at 30.66% 36.42%,
-    rgba(245, 134, 51, 0.87) 0%,
-    rgba(250, 185, 87, 0) 100%
+    rgba(245, 134, 51, 0.5) 0%,
+    rgba(250, 185, 87, 0.5) 100%
   );
   filter: blur(6rem);
   transform: rotate(-135deg);
@@ -118,7 +118,7 @@ li {
   background: radial-gradient(
     49.36% 42.56% at 30.66% 36.42%,
     #be2fb9 0%,
-    rgba(209, 78, 205, 0) 100%
+    rgba(209, 78, 205, 0.5) 100%
   );
   filter: blur(6rem);
   transform: rotate(-90deg);
@@ -134,7 +134,7 @@ li {
   background: radial-gradient(
     90.08% 76.09% at 30.66% 36.42%,
     rgba(245, 134, 51, 0.87) 0%,
-    rgba(250, 185, 87, 0) 100%
+    rgba(250, 185, 87, 0.5) 100%
   );
   filter: blur(6rem);
   transform: rotate(-135deg);

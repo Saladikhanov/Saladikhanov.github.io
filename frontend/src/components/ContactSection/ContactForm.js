@@ -11,6 +11,7 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  //border: 1px solid red;
 `;
 
 const Button = styled.button`
@@ -34,7 +35,11 @@ const Input = styled.input`
   background: none;
   border: none;
   border-bottom: 2px solid rgba(190, 170, 234, 0.5);
-  width: 375px;
+  width: 40vw;
+
+  @media screen and (max-width: 768px) {
+    width: 85vw;
+  }
   margin-bottom: 30px;
   /* opacity: 0.5; */
 
@@ -119,7 +124,7 @@ function ContactForm() {
   //   }, [formData]);
 
   return (
-    <div>
+    <>
       <Div>
         <Input
           type="text"
@@ -158,7 +163,7 @@ function ContactForm() {
           {/* <Img src={ArrowCircle} alt="arrow"/> */}
         </ButtonDiv>
       </Div>
-    </div>
+    </>
   );
 }
 export default ContactForm;

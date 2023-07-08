@@ -39,6 +39,11 @@ export const NavbarContainer = styled.div`
   /* border: 1px solid red; */
 `;
 
+export const NavDivName = styled.div`
+  font-size: 20px;
+  color: #fff;
+`;
+
 export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;

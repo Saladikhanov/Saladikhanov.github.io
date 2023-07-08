@@ -37,17 +37,19 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: #0c0c0c;
   font-size: 80px;
   text-align: center;
 
   /* ANIMATION  */
+  animation: fadeIn 3s;
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
   /* active class  */
   transform: translate(0px, 0%);
   opacity: 1;
+  
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -61,7 +63,7 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   margin-top: 24px;
   width: 440px;
-  color: #fff;
+  color: #121212;
   font-size: 24px;
   text-align: center;
   max-width: 600px;

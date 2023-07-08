@@ -14,7 +14,9 @@ export const ArrowRight = styled(BsArrowRight)`
 export const AboutContainer = styled.div`
   padding-bottom: 80px;
 `;
-export const AboutWrapper = styled.div``;
+export const AboutWrapper = styled.div`
+
+`;
 export const AboutRow = styled.div`
   display: flex;
   flex-direction: row;
@@ -22,9 +24,17 @@ export const AboutRow = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
   } ;
 `;
-export const Column1 = styled.div``;
+export const Column1 = styled.div`
+//border:1px solid red;
+  @media screen and (min-width: 768px) {
+    max-width: 60%;
+  }
+`;
 export const Column2 = styled.div``;
 export const TextWrapper = styled.div`
   overflow: hidden;
@@ -46,18 +56,20 @@ export const Heading = styled.h2`
   font-size: 33px;
   line-height: 50px;
   font-family: "newyorkregular";
+  color: #121212;
 
   @media screen and (max-width: 768px) {
     /* width: 90%; */
     font-size: 26px;
     text-align: start;
-  } ;
+  };
 `;
 export const Subtitle = styled.p`
   line-height: 24px;
   font-size: 16px;
   margin-left: 0;
   width: 80%;
+  color: #121212;
   /* border: 1px solid red; */
   margin-bottom: 10px;
 `;
@@ -67,15 +79,18 @@ export const BtnWrapper = styled.div`
 `;
 export const ImgWrap = styled.div`
   padding-top: 80px;
-  /* border: 1px solid red; */
+ 
+  
 `;
 export const Img = styled.img`
-  padding-right: 20px;
-  width: 500px;
+  //margin-right: 20px;
+  width: 300px;
+  border-radius: 10px;
 
   @media screen and (max-width: 768px) {
     padding-right: 0;
-    width: 100vw;
+    width: 50vw;
+    border-radius: 20px;
   } ;
 `;
 export const Link = styled.a``;

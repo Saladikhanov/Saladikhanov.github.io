@@ -22,12 +22,23 @@ import {
   Logo2,
 } from "./AboutElements";
 import cvImg from "../../assets/about_blank.png";
-import floxiesImg from "../../assets/floxies_blanc.png";
-import floxiesLogo from "../../assets/floxies_logo.png";
-import baligaLogo from "../../assets/baliga_logo.png";
 
 const AboutSection = () => {
   const [hover, setHover] = useState(false);
+
+  const handleDownloadCv = () => {
+    fetch("CV_Arsen_S_Fullstack.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "CV_Arsen_S_Fullstack.pdf";
+        alink.click();
+      });
+    });
+  };
 
   const onHover = () => {
     setHover(!hover);
@@ -39,29 +50,27 @@ const AboutSection = () => {
           <AboutRow>
             <Column1>
               <TextWrapper>
-                <Heading>Hi, I am Daria!</Heading>
-                <Heading>UI/UX Designer based in sunny Tel Aviv.</Heading>
+                <Heading>Hi, I am Arsen!</Heading>
+                <Heading>Fullstack developer based in Israel.</Heading>
                 <Subtitle>
-                  With <mark> 2 years of experience in Visual Design </mark> and
-                  freelance projects, I am 100% focused on making great digital
-                  products.
+                  Hello! I'm Arsen Saladikhanov,
+                  <mark> experienced full-stack developer with a focus on frontend development. <br/></mark>
+                  I working with JavaScript, TypeScript, Java, React, Spring
+                  Framework, and more.
                 </Subtitle>
                 <Subtitle>
-                  In my works,{" "}
-                  <mark>I use simple and functional solutions.</mark> I pay
-                  attention to designing the logic of the future design, the
-                  brand identity of the company, and responsiveness.
+                  If you have any questions or would like to learn more about my
+                  work, feel free to contact me via phone, email, or LinkedIn.
                 </Subtitle>
-                <Subtitle>
-                  My priority optimixing work to enhance user experience.
-                  Graduated Art & Drama College in Graphic Design, I realized
-                  designing user interfaces and challenging myself creating user
-                  flows are my true passion. In 2020 I transitioned to UI / UX
-                  world and couldn't be happier with that now.
-                </Subtitle>
+
                 <BtnWrapper>
-                  <Button to="cv" onMouseEnter={onHover} onMouseLeave={onHover}>
-                    VIEW MY CV
+                  <Button
+                    to="/"
+                    onClick={handleDownloadCv}
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                  >
+                    DOWNLOAD MY CV
                     {hover ? <Arrow /> : <ArrowCircle />}
                   </Button>
                 </BtnWrapper>
@@ -70,43 +79,6 @@ const AboutSection = () => {
             <Column2>
               <ImgWrap>
                 <Img src={cvImg} alt="about cv" />
-              </ImgWrap>
-            </Column2>
-          </AboutRow>
-          <AboutRow>
-            <Column1>
-              <TextWrapper>
-                <Heading>Proud member of Floxies.</Heading>
-                <Subtitle>
-                  Floxies is a young community for <mark>all women</mark> across
-                  the globe with an interest in <mark>UX/UI Design</mark> and
-                  Webflow Development. The idea is that of reducing the{" "}
-                  <mark>gender gap</mark> in Technology where only 3% of women
-                  consider this field as their primary career choice.
-                </Subtitle>
-                <Subtitle>
-                  At Floxies we organise weekly meetings every Wednesday at 5pm
-                  UK time.
-                </Subtitle>
-                <Subtitle>
-                  Our virtual space allows us to hang out or learn something new
-                  from one another.
-                </Subtitle>
-                <Subtitle>
-                  Come and see it yourself at{" "}
-                  <Link href="https://floxiescommunity.webflow.io">
-                    floxiescommunity.webflow.io
-                  </Link>
-                </Subtitle>
-                <LogoWrap>
-                  <Logo1 src={floxiesLogo} />
-                  <Logo2 src={baligaLogo} />
-                </LogoWrap>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={floxiesImg} alt="about cv" />
               </ImgWrap>
             </Column2>
           </AboutRow>

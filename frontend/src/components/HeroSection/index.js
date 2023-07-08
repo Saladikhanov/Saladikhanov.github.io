@@ -24,15 +24,15 @@ const Hero = () => {
     <HeroContainer>
       <HeroBg></HeroBg>
       <HeroContent>
-        <HeroH1>UI/UX Designer</HeroH1>
+        <HeroH1>Fullstack developer</HeroH1>
         <HeroP>
           With passion and focus on creating{" "}
-          <mark>user-friendly, intuitive interfaces</mark> that transform
+          <mark>user-friendly, intuitive websites</mark> that transform
           companies.
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="project"
+            to="expertise"
             smooth="true"
             duration={500}
             spy={true}
@@ -41,7 +41,7 @@ const Hero = () => {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            SEE PORTFOLIO
+            TECHNOLOGIES I USE
             {hover ? <ArrowDown /> : <ArrowDownCircle />}
           </Button>
         </HeroBtnWrapper>

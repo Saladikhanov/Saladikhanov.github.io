@@ -1,7 +1,7 @@
 import ContactForm from "./ContactForm";
 import {
   ContactSection,
-  Instagram,
+  Github,
   Linkedin,
   Phone,
   ContactWrapper,
@@ -12,6 +12,7 @@ import {
   SocialLink,
   ContactFormWrapper,
 } from "./ContactElements";
+import {AiFillGithub} from "react-icons/ai";
 // import { NavLink } from 'react-router-dom'
 function Contact() {
   return (
@@ -20,19 +21,19 @@ function Contact() {
         {/* <Divider date="04/04" section="CONTACT" name="DARIA ZAFIRA" /> */}
         <Header>Let’s create something today!</Header>
         <City>Tel Aviv, Israel</City>
-        <Link href="tel: +972 (50) 366 85 76">Phone: +972 (50) 366 85 76</Link>
+        <Link href="tel: +972 (50) 911 38 89">Phone: +972 (50) 911 38 89</Link>
         <br />
-        <Link href="mailto: dariazefira@gmail.com">
-          Email: dariazefira@gmail.com
+        <Link href="mailto: saladikhanov@gmail.com">
+          Email: Saladikhanov@gmail.com
         </Link>
         <SocialWrapper className="social_link_wrapper">
-          <SocialLink href="https://www.linkedin.com/in/daria-zefira-a488581b5/">
+          <SocialLink href="https://www.linkedin.com/in/saladikhanov">
             <Linkedin />
           </SocialLink>
-          <SocialLink href="https://www.instagram.com/daria_zefira_design/">
-            <Instagram />
+          <SocialLink href="https://github.com/Saladikhanov/">
+            <Github />
           </SocialLink>
-          <SocialLink href="tel: +972 (50) 366 85 76">
+          <SocialLink href="tel: +972 (50) 911 38 89">
             <Phone />
           </SocialLink>
         </SocialWrapper>

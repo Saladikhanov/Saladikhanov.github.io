@@ -5,10 +5,10 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   /* background: #41327b; */
-  background: ${({ scrollNav }) =>
-    scrollNav ? "rgba(0, 0, 0, 0.534) 100%" : "none"};
+  background: ${({scrollNav}) =>
+          scrollNav ? "rgba(18, 18, 18, 0.5) 100%" : "none"};
   /* filter: blur(6rem); */
-  height: 80px;
+  height: 50px;
   width: 100vw;
   /* margin-top: -80px; */
   display: flex;
@@ -21,20 +21,20 @@ export const Nav = styled.nav`
   top: 0;
   transition: 0.8s all ease;
   z-index: 999;
-  /* border: ${({ scrollNav }) => (scrollNav ? "1px solid red" : "none")}; */
-  box-shadow: ${({ scrollNav }) =>
-    scrollNav ? "0px 16px 31px rgba(0, 0, 0, 0.29)" : "none"};
-  backdrop-filter: ${({ scrollNav }) => (scrollNav ? "blur(3px)" : "none")};
+    /* border: ${({scrollNav}) => (scrollNav ? "1px solid red" : "none")}; */
+  box-shadow: ${({scrollNav}) =>
+          scrollNav ? "0px 16px 31px rgba(0, 0, 0, 0.3)" : "none"};
+  backdrop-filter: ${({scrollNav}) => (scrollNav ? "blur(3px)" : "none")};
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
-  } ;
+  };
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 50px;
   z-index: 1;
   width: 100%;
   padding: 0;
@@ -42,7 +42,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: #121212;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -61,6 +61,10 @@ export const NavName = styled.img`
   height: 15px;
   /* border: 1px solid red; */
 `;
+export const NavDivName = styled.div`
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+`;
 export const MobileIcon = styled.div`
   display: none;
 
@@ -70,9 +74,11 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 35px;
+    font-size: 25px;
     cursor: pointer;
     color: #beaaea;
+    
+    
     /* border: 1px solid red; */
   } ;
 `;
@@ -90,11 +96,13 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 50px;
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: ${({ scrollNav }) => (scrollNav ? "#FFF" : "#e59aff")};
+  /* color: #fff; */
+  /* color: #0c0c0c; */
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -103,6 +111,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 2px solid #e59aff;
+    border-bottom: 3px solid #e59aff;
   }
+  
 `;

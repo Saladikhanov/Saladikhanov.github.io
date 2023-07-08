@@ -23,28 +23,33 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Hero />
       {/* add id={id} to Divider */}
-      <Divider
+      {/* <Divider
         id="project"
-        date="01/04"
+        date="01/03"
         section="PROJECTS"
-        name="DARIA ZAFIRA"
+        name="ARSEN SALADIKHANOV"
       />
-      <ProjectsSection />
+      <ProjectsSection /> */}
 
       <Divider
         id="expertise"
-        date="02/04"
+        date="01/04"
         section="EXPERTISE"
-        name="DARIA ZAFIRA"
+        name="ARSEN SALADIKHANOV"
       />
       <Expertise />
-      <Divider id="about" date="03/04" section="ABOUT" name="DARIA ZAFIRA" />
+      <Divider
+        id="about"
+        date="02/03"
+        section="ABOUT"
+        name="ARSEN SALADIKHANOV"
+      />
       <AboutSection />
       <Divider
         id="contact"
-        date="04/04"
+        date="03/03"
         section="CONTACT"
-        name="DARIA ZAFIRA"
+        name="ARSEN SALADIKHANOV"
       />
       <Contact />
       <Footer />

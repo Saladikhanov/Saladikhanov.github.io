@@ -10,20 +10,20 @@ import {
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}></Icon>
+      {/*<Icon onClick={toggle}></Icon>*/}
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink
-            to="project"
-            smooth="true"
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            onClick={toggle}
-          >
-            Projects
-          </SidebarLink>
+          {/*<SidebarLink*/}
+          {/*  to="project"*/}
+          {/*  smooth="true"*/}
+          {/*  duration={500}*/}
+          {/*  spy={true}*/}
+          {/*  exact="true"*/}
+          {/*  offset={-80}*/}
+          {/*  onClick={toggle}*/}
+          {/*>*/}
+          {/*  Projects*/}
+          {/*</SidebarLink>*/}
           <SidebarLink
             to="expertise"
             smooth="true"

@@ -8,24 +8,18 @@ export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 990;
   width: 100vw;
-  height: 350px;
+  height: 300px;
   /* background: rgba(0, 0, 0, 0.534) 100%; */
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 9%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 9%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 9%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: rgb(18, 18, 18);
+  background: -moz-linear-gradient(90deg,
+  rgba(0, 0, 0, 0) 9%,
+  rgb(18, 18, 18) 100%);
+  background: -webkit-linear-gradient(90deg,
+  rgba(0, 0, 0, 0) 9%,
+  rgb(18, 18, 18) 100%);
+  background: linear-gradient(90deg,
+  rgba(0, 0, 0, 0) 9%,
+  rgb(18, 18, 18) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
   backdrop-filter: blur(3px);
   display: grid;
@@ -34,15 +28,15 @@ export const SidebarContainer = styled.aside`
   left: 0;
 
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: 80px;
+  opacity: ${({isOpen}) => (isOpen ? "100%" : "0")};
+  top: 50px;
   /* opacity: 100%; */
-  /* top: ${({ isOpen }) => (isOpen ? "80px" : "-100%")}; */
-  left: ${({ isOpen }) => (isOpen ? "0px" : "100%")};
+    /* top: ${({isOpen}) => (isOpen ? "80px" : "-100%")}; */
+  left: ${({isOpen}) => (isOpen ? "0px" : "100%")};
 `;
 
 export const CloseIcon = styled(VscChromeClose)`
-  color: #fff;
+  color: #FFF;
 `;
 
 export const Icon = styled.div`
@@ -56,7 +50,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-  color: #fff;
+  color: #121212;
 `;
 
 export const SidebarMenu = styled.ul`
@@ -83,7 +77,7 @@ export const SidebarLink = styled(LinkScroll)`
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
 
   &:hover {

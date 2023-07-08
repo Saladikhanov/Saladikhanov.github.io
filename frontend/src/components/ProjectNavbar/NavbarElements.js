@@ -105,3 +105,7 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 2px solid #e59aff;
   }
 `;
+export const NavDivName = styled.div`
+  font-size: 1.5rem;
+  color: black;
+`;

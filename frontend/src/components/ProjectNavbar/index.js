@@ -8,8 +8,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
-  NavName,
+  NavDivName,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -40,8 +39,9 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            <NavIcon src={LogoIcon} />
-            <NavName src={LogoName} />
+            {/* <NavIcon src={LogoIcon} />
+            <NavName src={LogoName} /> */}
+            <NavDivName>Arsen Saladikhanov</NavDivName>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <VscMenu />

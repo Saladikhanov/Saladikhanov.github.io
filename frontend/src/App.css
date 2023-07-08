@@ -52,7 +52,7 @@ body {
   height: 100%;
   line-height: 1;
   font-size: 16px;
-  color: rgb(255, 255, 255);
+
 }
 .wrapper {
   min-height: 100%;
@@ -68,8 +68,6 @@ mark {
 /* End of reseting */
 /* <----------------------MOBILE-First------------------> */
 body {
-  background: #41327b;
-  /* background: #2f5d4a; */
   font-family: "Nunito Sans", sans-serif;
 }
 h1 {
@@ -313,9 +311,7 @@ ul.expertise_desc > li {
   ._container {
     max-width: 1300px;
   }
-  body {
-    background: #41327b;
-  }
+
   h1 {
     font-size: 80px;
   }
@@ -325,5 +321,8 @@ ul.expertise_desc > li {
   hr {
     width: 1300px;
   }
+}
+body {
+  background: #121212;
 }
 /* <-----------------------------------------------> */

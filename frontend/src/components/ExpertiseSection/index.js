@@ -10,32 +10,32 @@ function Expertise() {
   return (
     <ExpSection className="expertise_wrapper _container">
       <ExpertiseWrapper>
-        <Header>UX & Strategy</Header>
+        <Header>Programming Languages</Header>
         <ExpertiseItemsWrapper>
-          <ExpItem>User Research</ExpItem>
-          <ExpItem>Competitive analysis</ExpItem>
-          <ExpItem>User Personas</ExpItem>
-          <ExpItem>User Journey Map</ExpItem>
-          <ExpItem>User Flow</ExpItem>
+          <ExpItem>JavaScript</ExpItem>
+          <ExpItem>TypeScript</ExpItem>
+          <ExpItem>Java</ExpItem>
+          <ExpItem>HTML</ExpItem>
+          <ExpItem>CSS</ExpItem>
         </ExpertiseItemsWrapper>
       </ExpertiseWrapper>
       <ExpertiseWrapper>
-        <Header>UI & Design</Header>
+        <Header>Frameworks and Libraries</Header>
         <ExpertiseItemsWrapper>
-          <ExpItem>Wireframes</ExpItem>
-          <ExpItem>Prototype</ExpItem>
-          <ExpItem>Hi-Fi designs</ExpItem>
-          <ExpItem>User Interface</ExpItem>
-          <ExpItem>Design Research</ExpItem>
+          <ExpItem>React JS</ExpItem>
+          <ExpItem>Spring</ExpItem>
+          <ExpItem>REDUX toolkit</ExpItem>
+          <ExpItem>Material UI</ExpItem>
+          <ExpItem>Bootstrap 5</ExpItem>
         </ExpertiseItemsWrapper>
       </ExpertiseWrapper>
       <ExpertiseWrapper>
-        <Header>Technology</Header>
+        <Header>Databases and Cloud</Header>
         <ExpertiseItemsWrapper>
-          <ExpItem>Adobe Photoshop</ExpItem>
-          <ExpItem>Adobe Illustraitor</ExpItem>
-          <ExpItem>Adobe XD</ExpItem>
-          <ExpItem>Figma</ExpItem>
+          <ExpItem>Mongo DB</ExpItem>
+          <ExpItem>MySQL</ExpItem>
+          <ExpItem>Google Firebase</ExpItem>
+          <ExpItem>Cloud DB</ExpItem>
         </ExpertiseItemsWrapper>
       </ExpertiseWrapper>
     </ExpSection>

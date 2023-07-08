@@ -10,6 +10,7 @@ export const ExpSection = styled.div`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
   }
 `;
 export const ExpertiseWrapper = styled.div`
@@ -18,7 +19,7 @@ export const ExpertiseWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   /* justify-content: start; */
-  /* border: 1px solid red; */
+   //border: 1px solid red; 
   max-width: 100vw;
   margin: 0px auto;
 `;
@@ -27,6 +28,10 @@ export const Header = styled.h2`
   font-size: 33px;
   font-family: "newyorkregular";
   padding: 80px 0 20px 0;
+
+  @media screen and (max-width: 960px) {
+    padding: 20px 0 20px 0;
+  }
 `;
 export const ExpertiseItemsWrapper = styled.ul`
   margin: 0;
@@ -40,4 +45,5 @@ export const ExpItem = styled.li`
   line-height: 35px;
   font-size: 16px;
   font-weight: normal;
+  color: #121212;
 `;

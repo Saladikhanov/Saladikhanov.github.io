@@ -8,8 +8,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
-  NavName,
+  NavDivName,
   NavMenu,
   NavItem,
   NavLinks,
@@ -29,13 +28,14 @@ const Footer = ({ toggle }) => {
     <>
       <Nav>
         <NavLogo to="/" onClick={toggleHome}>
-          <NavIcon src={LogoIcon} />
-          <NavName src={LogoName} />
+          {/* <NavIcon src={LogoIcon} />
+          <NavName src={LogoName} /> */}
+          {/*<NavDivName>AS</NavDivName>*/}
         </NavLogo>
         <NavbarContainer>
           <NavMenu>
             <NavItem>
-              <NavLinks
+              {/* <NavLinks
                 to="project"
                 smooth="true"
                 duration={500}
@@ -44,7 +44,7 @@ const Footer = ({ toggle }) => {
                 offset={-80}
               >
                 Projects
-              </NavLinks>
+              </NavLinks> */}
             </NavItem>
             <NavItem>
               <NavLinks
@@ -83,10 +83,10 @@ const Footer = ({ toggle }) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <Copyright>
-            <Top>All rights reserved to Daria Zefira</Top>
-            <Bottom>© COPYRIGHT 2022</Bottom>
-          </Copyright>
+          {/*<Copyright>*/}
+          {/*  <Top>All rights reserved to Arsen Saladikhanov</Top>*/}
+          {/*  <Bottom>© COPYRIGHT 2023</Bottom>*/}
+          {/*</Copyright>*/}
         </NavbarContainer>
         <ArrowWrap to="/" onClick={toggleHome}>
           <ArrowUp />

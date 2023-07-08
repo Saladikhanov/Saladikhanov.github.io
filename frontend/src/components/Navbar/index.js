@@ -14,6 +14,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavDivName,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -30,7 +31,7 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav);
   }, []);
   useEffect(() => {
-    console.log(scrollNav);
+    // console.log(scrollNav);
   });
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -40,15 +41,17 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            <NavIcon src={LogoIcon} />
-            <NavName src={LogoName} />
+            {/* <NavIcon src={LogoIcon} /> */}
+            {/* <NavName src={LogoName} /> */}
+            <NavDivName>Arsen Saladikhanov</NavDivName>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <VscMenu />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
+              {/* <NavLinks
+                scrollNav={scrollNav}
                 to="project"
                 smooth="true"
                 duration={500}
@@ -57,10 +60,11 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Projects
-              </NavLinks>
+              </NavLinks> */}
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 to="expertise"
                 smooth="true"
                 duration={500}
@@ -73,6 +77,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 to="about"
                 smooth="true"
                 duration={500}
@@ -85,6 +90,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 to="contact"
                 smooth="true"
                 duration={500}

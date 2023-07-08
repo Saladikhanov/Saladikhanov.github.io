@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AiFillInstagram, AiFillLinkedin, AiFillPhone } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillPhone } from "react-icons/ai";
 import { BsArrowRightCircle, BsArrowRight } from "react-icons/bs";
 
 export const ContactSection = styled.div`
@@ -29,7 +29,7 @@ export const ArrowRight = styled(BsArrowRight)`
   font-size: 30px;
 `;
 
-export const Instagram = styled(AiFillInstagram)`
+export const Github = styled(AiFillGithub)`
   color: #e59aff;
   margin: 20px;
   font-size: 50px;
@@ -48,7 +48,7 @@ export const Phone = styled(AiFillPhone)`
 export const ContactWrapper = styled.div`
   /* border: 1px solid red; */
   padding-right: 130px;
-
+margin-left:50px;
   @media screen and (max-width: 768px) {
     width: 99%;
   }
@@ -65,7 +65,7 @@ export const Link = styled.a`
 `;
 export const Header = styled.h2`
   padding: 40px 50px 0 20px;
-  /* border: 1px solid red; */
+  text-align: start;
 `;
 export const City = styled.p``;
 export const SocialWrapper = styled.div``;
@@ -75,7 +75,7 @@ export const ContactFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 50%;
-  padding: 2rem;
+  padding: 2rem 1rem;
 
   @media screen and (max-width: 768px) {
     width: 90%;
