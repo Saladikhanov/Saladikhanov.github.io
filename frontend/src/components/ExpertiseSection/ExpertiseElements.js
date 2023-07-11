@@ -28,6 +28,7 @@ export const Header = styled.h2`
   font-size: 33px;
   font-family: "newyorkregular";
   padding: 80px 0 20px 0;
+  color: #e59aff;
 
   @media screen and (max-width: 960px) {
     padding: 20px 0 20px 0;
@@ -45,5 +46,5 @@ export const ExpItem = styled.li`
   line-height: 35px;
   font-size: 16px;
   font-weight: normal;
-  color: #121212;
+  color: #ffffff;
 `;

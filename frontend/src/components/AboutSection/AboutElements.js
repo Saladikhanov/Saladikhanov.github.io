@@ -56,7 +56,7 @@ export const Heading = styled.h2`
   font-size: 33px;
   line-height: 50px;
   font-family: "newyorkregular";
-  color: #121212;
+  color: #FFF;
 
   @media screen and (max-width: 768px) {
     /* width: 90%; */
@@ -69,7 +69,7 @@ export const Subtitle = styled.p`
   font-size: 16px;
   margin-left: 0;
   width: 80%;
-  color: #121212;
+  color: #FFF;
   /* border: 1px solid red; */
   margin-bottom: 10px;
 `;

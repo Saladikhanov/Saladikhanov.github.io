@@ -36,6 +36,10 @@ const Input = styled.input`
   border: none;
   border-bottom: 2px solid rgba(190, 170, 234, 0.5);
   width: 40vw;
+  
+  ::placeholder{
+    color: #e59aff;
+  }
 
   @media screen and (max-width: 768px) {
     width: 85vw;
@@ -72,6 +76,7 @@ function ContactForm() {
   };
 
   const handleSubmit = () => {
+    setButtonContent("SENDING...");
     fetch("https://formsubmit.co/ajax/saladikhanov@gmail.com", {
       method: "POST",
       headers: {
@@ -85,14 +90,25 @@ function ContactForm() {
       }),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        if (data.success) {
+          setButtonContent("MESSAGE SENT!");
+          setTimeout(() => {
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+            });
+          }, 3000); // Delay of 3 seconds;
+        } else {
+          setButtonContent("MESSAGE NOT SENT!");
+        }
+      })
       .catch((error) => console.log(error));
-    // setFormData.name = "";
-    // setFormData.email = "";
-    // setFormData.message = "";
-    alert("DONE!");
+    ;
 
-    // console.log(formData);
+
+
   };
 
   useEffect(() => {
@@ -131,13 +147,13 @@ function ContactForm() {
           placeholder="Name*"
           name={`name`}
           onChange={handleInput}
-          // value={formData.name}
+          value={formData.name}
         />
         <Input
           type="text"
           placeholder="Email*"
           name={`email`}
-          // value={formData.email}
+          value={formData.email}
           onChange={handleInput}
         />
 
@@ -145,7 +161,7 @@ function ContactForm() {
           type="text"
           placeholder="Message*"
           name={`message`}
-          // value={formData.message}
+          value={formData.message}
           onChange={handleInput}
         />
         {/* {showAlert && <div>Passwords must match</div>} */}

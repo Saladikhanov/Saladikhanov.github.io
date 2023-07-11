@@ -66,8 +66,11 @@ export const Link = styled.a`
 export const Header = styled.h2`
   padding: 40px 50px 0 20px;
   text-align: start;
+  color: #FFF;
 `;
-export const City = styled.p``;
+export const City = styled.p`
+color: #e59aff;
+`;
 export const SocialWrapper = styled.div``;
 export const SocialLink = styled.a``;
 export const ContactFormWrapper = styled.div`
